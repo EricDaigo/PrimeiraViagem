@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Primeira Viagem — 50 Dicas Que Ninguém Te Contou Sobre Maternidade</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="O guia completo para mães de primeira viagem: 50 dicas práticas sobre saúde do bebê, amamentação, sono e saúde mental. Baseado em OMS e SBP.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Primeira Viagem">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Primeira Viagem — 50 Dicas Que Ninguém Te Contou Sobre Maternidade">
+  <meta property="og:description" content="O guia completo para mães de primeira viagem: 50 dicas práticas sobre saúde do bebê, amamentação, sono e saúde mental. Baseado em OMS e SBP.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Primeira Viagem — 50 Dicas Que Ninguém Te Contou Sobre Maternidade">
+  <meta name="twitter:description" content="O guia completo para mães de primeira viagem: 50 dicas práticas sobre saúde do bebê, amamentação, sono e saúde mental. Baseado em OMS e SBP.">
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♡</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+/* ── RESET & BASE ─────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --bg:        #fdf8f3;
+  --bg2:       #f5f0eb;
+  --accent:    #e4a4bd;
+  --text:      #262626;
+  --text70:    rgba(38,38,38,.70);
+  --text30:    rgba(38,38,38,.30);
+  --ease:      cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* ── REVEAL ANIMATION ─────────────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s var(--ease);
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: .1s; }
+.reveal-delay-2 { transition-delay: .2s; }
+.reveal-delay-3 { transition-delay: .3s; }
+.reveal-delay-4 { transition-delay: .4s; }
+
+/* ── NAVIGATION ───────────────────────────────────────────────────────── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  background: rgba(253, 248, 243, 0.80);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(38,38,38,.05);
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+.nav-cta {
+  background: var(--accent);
+  color: var(--text);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all .4s var(--ease);
+}
+
+.nav-cta:hover {
+  background: var(--text);
+  color: var(--bg);
+  transform: scale(1.04);
+}
+
+/* ── HERO ─────────────────────────────────────────────────────────────── */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 100px 60px 80px;
+  gap: 60px;
+}
+
+.hero-left { position: relative; z-index: 2; }
+
+.hero-eyebrow {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.hero-headline {
+  font-size: clamp(52px, 7.5vw, 110px);
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-bottom: 36px;
+}
+
+.hero-headline em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--accent);
+  display: block;
+}
+
+.hero-sub {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text70);
+  line-height: 1.65;
+  max-width: 400px;
+  margin-bottom: 44px;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.hero-cta-primary {
+  background: var(--text);
+  color: var(--bg);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 18px 44px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all .5s var(--ease);
+}
+
+.hero-cta-primary:hover {
+  background: var(--accent);
+  color: var(--text);
+  transform: scale(1.04);
+}
+
+.hero-cta-arrow {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap .3s var(--ease);
+}
+
+.hero-cta-arrow:hover { gap: 16px; }
+
+.hero-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-card {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 4/5;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: filter 1s var(--ease), transform 1s var(--ease);
+}
+
+.hero-image-card:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.04);
+}
+
+/* Ebook mockup placeholder */
+.hero-book-mock {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 4/5;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #2D1B35 0%, #4A1535 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(45,27,53,.25);
+  transition: transform 1s var(--ease), box-shadow 1s var(--ease);
+}
+
+.hero-book-mock:hover {
+  transform: scale(1.03) rotate(1deg);
+  box-shadow: 0 60px 100px rgba(45,27,53,.35);
+}
+
+.mock-spine {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 6px;
+  background: var(--accent);
+}
+
+.mock-inner {
+  text-align: center;
+  padding: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.mock-eyebrow {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.mock-title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.mock-title em {
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 300;
+  display: block;
+  font-size: .75em;
+}
+
+.mock-rule {
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+  margin: 20px auto;
+}
+
+.mock-subtitle {
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(255,255,255,.55);
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+}
+
+.mock-stats {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.mock-stat {
+  text-align: center;
+}
+
+.mock-stat-num {
+  font-size: 26px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  display: block;
+}
+
+.mock-stat-label {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.4);
+  margin-top: 4px;
+  display: block;
+}
+
+.mock-divider {
+  width: 1px;
+  height: 36px;
+  background: rgba(255,255,255,.12);
+  align-self: center;
+}
+
+/* Floating badge */
+.float-badge {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  animation: bounce-slow 4s ease-in-out infinite;
+  box-shadow: 0 20px 40px rgba(228,164,189,.4);
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(-5%); }
+  50%       { transform: translateY(5%); }
+}
+
+.badge-num {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1;
+}
+
+.badge-text {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-align: center;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+/* ── PAIN STRIP ──────────────────────────────────────────────────────── */
+.pain-strip {
+  background: var(--text);
+  padding: 28px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.pain-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pain-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.pain-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(253,248,243,.65);
+  letter-spacing: 0.02em;
+}
+
+/* ── PROBLEM SECTION ─────────────────────────────────────────────────── */
+.problem {
+  padding: 120px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.problem-label {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.problem-label::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.problem-headline {
+  font-size: clamp(38px, 5vw, 68px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+
+.problem-headline em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--accent);
+}
+
+.problem-body {
+  font-size: 16px;
+  color: var(--text70);
+  line-height: 1.8;
+  max-width: 420px;
+}
+
+.problem-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.problem-card {
+  background: var(--bg2);
+  border-radius: 16px;
+  padding: 24px 28px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  border-left: 3px solid transparent;
+  transition: all .5s var(--ease);
+  cursor: default;
+}
+
+.problem-card:hover {
+  background: var(--bg);
+  border-left-color: var(--accent);
+  transform: translateX(8px);
+  box-shadow: 0 8px 32px rgba(38,38,38,.06);
+}
+
+.problem-card-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+
+.problem-card-title {
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.problem-card-desc {
+  font-size: 13px;
+  color: var(--text70);
+  line-height: 1.65;
+}
+
+/* ── SERVICES / CONTENTS ─────────────────────────────────────────────── */
+.contents {
+  background: var(--bg2);
+  padding: 120px 60px;
+}
+
+.contents-header {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.contents-headline {
+  font-size: clamp(56px, 9vw, 120px);
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+}
+
+.contents-headline em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--accent);
+}
+
+.contents-sub {
+  font-size: 15px;
+  color: var(--text70);
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.contents-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid rgba(38,38,38,.08);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.content-card {
+  padding: 40px 32px;
+  background: var(--bg);
+  border-right: 1px solid rgba(38,38,38,.08);
+  border-bottom: 1px solid rgba(38,38,38,.08);
+  transition: all .5s var(--ease);
+  cursor: default;
+}
+
+.content-card:nth-child(4n) { border-right: none; }
+.content-card:nth-last-child(-n+4) { border-bottom: none; }
+
+.content-card:hover {
+  background: var(--accent);
+}
+
+.content-card:hover .card-icon { color: var(--text); }
+.content-card:hover .card-num { color: rgba(38,38,38,.3); }
+.content-card:hover .card-title { color: var(--text); }
+.content-card:hover .card-desc { color: rgba(38,38,38,.65); }
+
+.card-num {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  color: var(--accent);
+  margin-bottom: 16px;
+  transition: color .5s var(--ease);
+}
+
+.card-icon {
+  font-size: 32px;
+  color: var(--accent);
+  margin-bottom: 20px;
+  display: block;
+  transition: color .5s var(--ease);
+}
+
+.card-title {
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+  line-height: 1.3;
+  transition: color .5s var(--ease);
+}
+
+.card-desc {
+  font-size: 12px;
+  color: var(--text70);
+  line-height: 1.65;
+  transition: color .5s var(--ease);
+}
+
+/* ── PORTFOLIO / PRODUCTS ──────────────────────────────────────────────── */
+.products {
+  padding: 120px 60px;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 72px;
+}
+
+.products-headline {
+  font-size: clamp(40px, 6vw, 82px);
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: -0.03em;
+}
+
+.products-headline em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--accent);
+  display: block;
+}
+
+.products-count {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text30);
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--accent);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.product-item { position: relative; }
+
+/* offset even items down */
+.product-item:nth-child(even) { margin-top: 100px; }
+
+.product-image-wrap {
+  aspect-ratio: 3/4;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background: var(--bg2);
+}
+
+/* product mock visuals */
+.product-mock {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s var(--ease);
+  position: relative;
+}
+
+.product-item:hover .product-mock { transform: scale(1.05); }
+
+.product-mock-1 { background: linear-gradient(145deg, #2D1B35 0%, #C73D60 100%); }
+.product-mock-2 { background: linear-gradient(145deg, #1A2744 0%, #2563A8 100%); }
+.product-mock-3 { background: linear-gradient(145deg, #1B3A2A 0%, #3A7D54 100%); }
+.product-mock-4 { background: linear-gradient(145deg, #3D2448 0%, #6A1B9A 100%); }
+
+.product-mock-title {
+  font-size: clamp(18px, 3vw, 28px);
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  padding: 0 30px;
+  margin-bottom: 12px;
+}
+
+.product-mock-title em {
+  display: block;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--accent);
+  font-size: .75em;
+}
+
+.product-mock-tag {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.45);
+  margin-bottom: 20px;
+}
+
+.product-mock-price {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+}
+
+.product-mock-price span {
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: rgba(255,255,255,.3);
+  margin-left: 8px;
+}
+
+/* hover overlay */
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(38,38,38,.0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .5s var(--ease);
+  z-index: 5;
+}
+
+.product-item:hover .product-overlay { background: rgba(38,38,38,.35); }
+
+.overlay-btn {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(.7);
+  transition: all .5s var(--ease);
+  text-decoration: none;
+}
+
+.product-item:hover .overlay-btn {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.overlay-btn-text {
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--bg);
+  text-align: center;
+  line-height: 1.4;
+}
+
+.product-meta { padding: 20px 4px 0; }
+
+.product-category {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.product-title {
+  font-size: clamp(20px, 3vw, 32px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.product-tags {
+  font-size: 11px;
+  color: var(--text30);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.product-tags span { display: flex; align-items: center; gap: 8px; }
+.product-tags span::after { content: '·'; color: var(--text30); }
+.product-tags span:last-child::after { display: none; }
+
+/* ── GUARANTEE ──────────────────────────────────────────────────────── */
+.guarantee {
+  background: var(--text);
+  padding: 100px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.guarantee-label {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.guarantee-headline {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+.guarantee-headline em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--accent);
+  display: block;
+}
+
+.guarantee-body {
+  font-size: 15px;
+  color: rgba(253,248,243,.6);
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.guarantee-cta {
+  background: var(--accent);
+  color: var(--text);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 18px 44px;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .5s var(--ease);
+}
+
+.guarantee-cta:hover {
+  background: var(--bg);
+  transform: scale(1.04);
+}
+
+.guarantee-box {
+  background: rgba(253,248,243,.05);
+  border: 1px solid rgba(253,248,243,.1);
+  border-radius: 20px;
+  padding: 48px 44px;
+  text-align: center;
+}
+
+.guarantee-icon { font-size: 52px; margin-bottom: 20px; display: block; }
+
+.guarantee-box-title {
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+.guarantee-box-body {
+  font-size: 14px;
+  color: rgba(253,248,243,.55);
+  line-height: 1.8;
+}
+
+/* ── PRICING ────────────────────────────────────────────────────────── */
+.pricing {
+  padding: 120px 60px;
+  background: var(--bg2);
+  text-align: center;
+}
+
+.pricing-label {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.pricing-headline {
+  font-size: clamp(44px, 7vw, 96px);
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+  margin-bottom: 16px;
+}
+
+.pricing-headline em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--accent);
+  display: block;
+}
+
+.pricing-sub {
+  font-size: 15px;
+  color: var(--text70);
+  margin-bottom: 64px;
+  line-height: 1.7;
+}
+
+.pricing-card {
+  max-width: 560px;
+  margin: 0 auto;
+  background: var(--bg);
+  border-radius: 24px;
+  padding: 60px 56px;
+  box-shadow: 0 20px 60px rgba(38,38,38,.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--accent);
+}
+
+.pricing-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--text);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 100px;
+  margin-bottom: 28px;
+}
+
+.pricing-de {
+  font-size: 14px;
+  color: var(--text30);
+  text-decoration: line-through;
+  margin-bottom: 8px;
+}
+
+.pricing-value {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 8px;
+}
+
+.pricing-value sup {
+  font-size: 28px;
+  vertical-align: top;
+  margin-top: 16px;
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.pricing-installment {
+  font-size: 13px;
+  color: var(--text70);
+  margin-bottom: 36px;
+}
+
+.pricing-features {
+  text-align: left;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pricing-feat {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.pricing-feat-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.pricing-btn {
+  width: 100%;
+  display: block;
+  background: var(--text);
+  color: var(--bg);
+  font-family: 'League Spartan', sans-serif;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 100px;
+  text-decoration: none;
+  text-align: center;
+  transition: all .5s var(--ease);
+  border: none;
+  cursor: pointer;
+}
+
+.pricing-btn:hover {
+  background: var(--accent);
+  color: var(--text);
+  transform: scale(1.02);
+}
+
+.pricing-guarantee-note {
+  margin-top: 16px;
+  font-size: 11px;
+  color: var(--text30);
+}
+
+/* ── FAQ ──────────────────────────────────────────────────────────────── */
+.faq {
+  padding: 120px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.faq-left {}
+
+.faq-label {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq-label::before { content: ''; display: block; width: 32px; height: 1px; background: var(--accent); }
+
+.faq-headline {
+  font-size: clamp(40px, 5.5vw, 72px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  margin-bottom: 28px;
+}
+
+.faq-headline em { font-style: italic; font-weight: 300; color: var(--accent); display: block; }
+
+.faq-body {
+  font-size: 15px;
+  color: var(--text70);
+  line-height: 1.8;
+}
+
+.faq-right { display: flex; flex-direction: column; gap: 0; }
+
+details {
+  border-bottom: 1px solid rgba(38,38,38,.1);
+  padding: 24px 0;
+}
+
+details:first-child { border-top: 1px solid rgba(38,38,38,.1); }
+
+summary {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  letter-spacing: 0.01em;
+}
+
+summary::-webkit-details-marker { display: none; }
+
+summary::after {
+  content: '+';
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--accent);
+  flex-shrink: 0;
+  transition: transform .3s var(--ease);
+}
+
+details[open] summary::after { transform: rotate(45deg); }
+
+.faq-answer {
+  padding-top: 16px;
+  font-size: 13px;
+  color: var(--text70);
+  line-height: 1.8;
+}
+
+/* ── FINAL CTA ────────────────────────────────────────────────────────── */
+.final-cta {
+  background: var(--bg2);
+  padding: 140px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta-bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30vw;
+  font-weight: 900;
+  color: rgba(38,38,38,.03);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.final-cta-label {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.final-cta-headline {
+  font-size: clamp(44px, 8vw, 110px);
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 2;
+}
+
+.final-cta-headline em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--accent);
+  display: block;
+}
+
+.final-cta-sub {
+  font-size: 16px;
+  color: var(--text70);
+  max-width: 480px;
+  margin: 0 auto 48px;
+  line-height: 1.75;
+  position: relative;
+  z-index: 2;
+}
+
+.final-cta-btn {
+  display: inline-block;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 20px 60px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all .5s var(--ease);
+  position: relative;
+  z-index: 2;
+}
+
+.final-cta-btn:hover {
+  background: var(--accent);
+  color: var(--text);
+  transform: scale(1.04);
+}
+
+.final-cta-note {
+  margin-top: 16px;
+  font-size: 11px;
+  color: var(--text30);
+  position: relative;
+  z-index: 2;
+}
+
+/* ── FOOTER ──────────────────────────────────────────────────────────── */
+footer {
+  background: var(--bg2);
+  padding: 0 60px 40px;
+  border-top: 1px solid rgba(38,38,38,.08);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 80px;
+  padding: 72px 0 60px;
+}
+
+.footer-brand-name {
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-mission {
+  font-size: 14px;
+  color: var(--text70);
+  line-height: 1.8;
+  max-width: 320px;
+}
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-col-title {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--accent);
+  display: inline-block;
+}
+
+.footer-col-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col-links a {
+  font-size: 13px;
+  color: var(--text70);
+  text-decoration: none;
+  transition: color .3s;
+  font-weight: 500;
+}
+
+.footer-col-links a:hover { color: var(--accent); }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  border-top: 1px solid rgba(38,38,38,.08);
+}
+
+.footer-copy {
+  font-size: 9px;
+  color: var(--text30);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-legal a {
+  font-size: 9px;
+  color: var(--text30);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: color .3s;
+}
+
+.footer-legal a:hover { color: var(--accent); }
+
+/* ── STICKY BAR ──────────────────────────────────────────────────────── */
+.sticky-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 14px 24px;
+  z-index: 999;
+  transform: translateY(100%);
+  transition: transform .6s var(--ease);
+}
+
+.sticky-bar.visible { transform: translateY(0); }
+
+.sticky-text {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(253,248,243,.6);
+  letter-spacing: 0.04em;
+}
+
+.sticky-price {
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.sticky-btn {
+  background: var(--accent);
+  color: var(--text);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 10px 28px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all .4s var(--ease);
+}
+
+.sticky-btn:hover { background: var(--bg); transform: scale(1.04); }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  nav { padding: 0 32px; }
+  .nav-links { display: none; }
+  .hero { grid-template-columns: 1fr; padding: 100px 32px 60px; }
+  .hero-right { display: none; }
+  .pain-strip { padding: 20px 32px; gap: 20px; }
+  .problem, .guarantee, .faq { grid-template-columns: 1fr; gap: 48px; padding: 80px 32px; }
+  .contents, .products, .pricing, .final-cta { padding: 80px 32px; }
+  .contents-grid { grid-template-columns: repeat(2, 1fr); }
+  .products-grid { grid-template-columns: 1fr; }
+  .product-item:nth-child(even) { margin-top: 0; }
+  .footer-top { grid-template-columns: 1fr; gap: 40px; }
+  .footer-cols { grid-template-columns: repeat(2,1fr); }
+}
+
+@media (max-width: 600px) {
+  nav { padding: 0 20px; }
+  .hero { padding: 90px 20px 60px; }
+  .hero-cta-group { flex-direction: column; align-items: flex-start; }
+  .contents-grid { grid-template-columns: 1fr; }
+  .footer-cols { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .products-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .sticky-text { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- STICKY -->
+<div class="sticky-bar" id="stickyBar">
+  <span class="sticky-text">Guia Primeira Viagem — 50 Dicas</span>
+  <span class="sticky-price">R$ 37</span>
+  <a href="#comprar" class="sticky-btn">Garantir agora</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Primeira Viagem</a>
+  <ul class="nav-links">
+    <li><a href="#conteudo">Conteúdo</a></li>
+    <li><a href="#produtos">Produtos</a></li>
+    <li><a href="#faq">Dúvidas</a></li>
+  </ul>
+  <a href="#comprar" class="nav-cta">Comprar agora</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow reveal">Guia completo para mães de primeira viagem</div>
+    <h1 class="hero-headline reveal reveal-delay-1">
+      A mater&shy;nidade
+      <em>que ninguém</em>
+      te contou.
+    </h1>
+    <p class="hero-sub reveal reveal-delay-2">
+      50 dicas práticas, honestas e baseadas em evidências — do enxoval ao primeiro aninho. Para a mãe que quer informação de qualidade, sem julgamento.
+    </p>
+    <div class="hero-cta-group reveal reveal-delay-3">
+      <a href="#comprar" class="hero-cta-primary">Quero meu guia — R$37</a>
+      <a href="#conteudo" class="hero-cta-arrow">Ver conteúdo →</a>
+    </div>
+  </div>
+
+  <div class="hero-right reveal reveal-delay-2">
+    <div class="float-badge">
+      <span class="badge-num">50</span>
+      <span class="badge-text">dicas<br>práticas</span>
+    </div>
+    <div class="hero-book-mock">
+      <div class="mock-spine"></div>
+      <div class="mock-inner">
+        <div class="mock-eyebrow">Guia Completo · Edição 2025</div>
+        <div class="mock-title">
+          Primeira
+          <em>Viagem</em>
+        </div>
+        <div class="mock-rule"></div>
+        <div class="mock-subtitle">50 Dicas Que Ninguém Te Contou<br>Sobre Maternidade</div>
+        <div class="mock-stats">
+          <div class="mock-stat">
+            <span class="mock-stat-num">50</span>
+            <span class="mock-stat-label">Dicas</span>
+          </div>
+          <div class="mock-divider"></div>
+          <div class="mock-stat">
+            <span class="mock-stat-num">8</span>
+            <span class="mock-stat-label">Blocos</span>
+          </div>
+          <div class="mock-divider"></div>
+          <div class="mock-stat">
+            <span class="mock-stat-num">4</span>
+            <span class="mock-stat-label">Bônus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN STRIP -->
+<div class="pain-strip">
+  <div class="pain-item"><div class="pain-dot"></div><span class="pain-text">Amamentação sem mitos</span></div>
+  <div class="pain-item"><div class="pain-dot"></div><span class="pain-text">Sono do bebê na prática</span></div>
+  <div class="pain-item"><div class="pain-dot"></div><span class="pain-text">Desenvolvimento mês a mês</span></div>
+  <div class="pain-item"><div class="pain-dot"></div><span class="pain-text">Saúde mental da mãe</span></div>
+  <div class="pain-item"><div class="pain-dot"></div><span class="pain-text">Baseado em OMS e SBP</span></div>
+  <div class="pain-item"><div class="pain-dot"></div><span class="pain-text">Acesso imediato em PDF</span></div>
+</div>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div>
+    <div class="problem-label reveal">O problema real</div>
+    <h2 class="problem-headline reveal reveal-delay-1">
+      Informação<br>demais,
+      <em>clareza de menos.</em>
+    </h2>
+    <p class="problem-body reveal reveal-delay-2">
+      Você abre o Google às 3h da manhã com um bebê no colo e encontra 40 resultados contraditórios. Cada site diz uma coisa. Cada avó diz outra. E você fica mais perdida do que estava antes.
+    </p>
+  </div>
+
+  <div class="problem-cards">
+    <div class="problem-card reveal">
+      <span class="problem-card-icon">😰</span>
+      <div>
+        <div class="problem-card-title">"Será que estou fazendo certo?"</div>
+        <div class="problem-card-desc">Insegurança constante sobre cada decisão — do colo à amamentação.</div>
+      </div>
+    </div>
+    <div class="problem-card reveal reveal-delay-1">
+      <span class="problem-card-icon">😫</span>
+      <div>
+        <div class="problem-card-title">Noites sem dormir sem saber por quê</div>
+        <div class="problem-card-desc">O bebê chora e você não sabe se é fome, cólica, sono ou outra coisa.</div>
+      </div>
+    </div>
+    <div class="problem-card reveal reveal-delay-2">
+      <span class="problem-card-icon">🌊</span>
+      <div>
+        <div class="problem-card-title">Informação contraditória</div>
+        <div class="problem-card-desc">Google, Instagram, avó e grupo de mães dizem coisas completamente diferentes.</div>
+      </div>
+    </div>
+    <div class="problem-card reveal reveal-delay-3">
+      <span class="problem-card-icon">😶</span>
+      <div>
+        <div class="problem-card-title">Todas parecem saber. Só você não.</div>
+        <div class="problem-card-desc">A maternidade de Instagram faz você se sentir inadequada. A realidade é diferente.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENTS -->
+<section class="contents" id="conteudo">
+  <div class="contents-header">
+    <div class="reveal" style="font-size:10px;font-weight:900;letter-spacing:.4em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;">O que está dentro</div>
+    <h2 class="contents-headline reveal reveal-delay-1">
+      8 blocos,
+      <em>50 dicas.</em>
+    </h2>
+    <p class="contents-sub reveal reveal-delay-2">Cada bloco foi pensado para uma fase diferente da sua jornada. Do enxoval ao primeiro aninho.</p>
+  </div>
+
+  <div class="contents-grid">
+    <div class="content-card reveal">
+      <div class="card-num">Bloco 01</div>
+      <span class="card-icon">🏠</span>
+      <div class="card-title">Antes de Chegar em Casa</div>
+      <div class="card-desc">Enxoval essencial, quarto do bebê, bolsa da maternidade e como escolher o pediatra.</div>
+    </div>
+    <div class="content-card reveal reveal-delay-1">
+      <div class="card-num">Bloco 02</div>
+      <span class="card-icon">👶</span>
+      <div class="card-title">Primeiros Dias em Casa</div>
+      <div class="card-desc">Por que o bebê chora, banho, coto umbilical, amamentação e sinais de alerta.</div>
+    </div>
+    <div class="content-card reveal reveal-delay-2">
+      <div class="card-num">Bloco 03</div>
+      <span class="card-icon">🤱</span>
+      <div class="card-title">Alimentação e Saúde</div>
+      <div class="card-desc">Amamentação sem mitos, produção de leite, introdução alimentar e vacinas.</div>
+    </div>
+    <div class="content-card reveal reveal-delay-3">
+      <div class="card-num">Bloco 04</div>
+      <span class="card-icon">📈</span>
+      <div class="card-title">Desenvolvimento do Bebê</div>
+      <div class="card-desc">O que esperar mês a mês do 1º ao 12º mês e estimulação em casa.</div>
+    </div>
+    <div class="content-card reveal">
+      <div class="card-num">Bloco 05</div>
+      <span class="card-icon">🌙</span>
+      <div class="card-title">Sono do Bebê</div>
+      <div class="card-desc">Safe sleep, rotina de sono, regressões e a questão de um milhão de reais.</div>
+    </div>
+    <div class="content-card reveal reveal-delay-1">
+      <div class="card-num">Bloco 06</div>
+      <span class="card-icon">🧠</span>
+      <div class="card-title">Saúde Mental da Mãe</div>
+      <div class="card-desc">Baby blues, depressão pós-parto, autocuidado e síndrome do impostor materno.</div>
+    </div>
+    <div class="content-card reveal reveal-delay-2">
+      <div class="card-num">Bloco 07</div>
+      <span class="card-icon">📋</span>
+      <div class="card-title">Praticidade e Organização</div>
+      <div class="card-desc">Apps essenciais, rotina com bebê, economia no enxoval e produtos que valem a pena.</div>
+    </div>
+    <div class="content-card reveal reveal-delay-3">
+      <div class="card-num">Bloco 08</div>
+      <span class="card-icon">💛</span>
+      <div class="card-title">Comunidade e Presença</div>
+      <div class="card-desc">Rede de apoio, maternidade real vs. Instagram e a dica mais honesta do guia.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="produtos">
+  <div class="products-header">
+    <h2 class="products-headline reveal">
+      A coleção
+      <em>completa.</em>
+    </h2>
+    <div class="products-count reveal">04 produtos</div>
+  </div>
+
+  <div class="products-grid">
+    <div class="product-item reveal">
+      <div class="product-image-wrap">
+        <div class="product-mock product-mock-1">
+          <div class="product-mock-tag">Ebook Principal</div>
+          <div class="product-mock-title">Primeira <em>Viagem</em></div>
+          <div class="product-mock-price">R$ 37 <span>R$ 97</span></div>
+        </div>
+        <div class="product-overlay">
+          <a href="#comprar" class="overlay-btn">
+            <span class="overlay-btn-text">Garantir<br>agora</span>
+          </a>
+        </div>
+      </div>
+      <div class="product-meta">
+        <div class="product-category">Produto Principal</div>
+        <div class="product-title">Guia Completo<br>50 Dicas</div>
+        <div class="product-tags">
+          <span>PDF</span>
+          <span>50 dicas</span>
+          <span>4 checklists bônus</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-item reveal reveal-delay-1">
+      <div class="product-image-wrap">
+        <div class="product-mock product-mock-3">
+          <div class="product-mock-tag">Order Bump</div>
+          <div class="product-mock-title">Kit 10 <em>Checklists</em></div>
+          <div class="product-mock-price">R$ 17 <span>R$ 67</span></div>
+        </div>
+        <div class="product-overlay">
+          <a href="#comprar" class="overlay-btn">
+            <span class="overlay-btn-text">Adicionar<br>ao pedido</span>
+          </a>
+        </div>
+      </div>
+      <div class="product-meta">
+        <div class="product-category">Order Bump</div>
+        <div class="product-title">Kit 10<br>Checklists Premium</div>
+        <div class="product-tags">
+          <span>PDF imprimível</span>
+          <span>10 listas</span>
+          <span>R$ 17</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-item reveal reveal-delay-2">
+      <div class="product-image-wrap">
+        <div class="product-mock product-mock-4">
+          <div class="product-mock-tag">Upsell</div>
+          <div class="product-mock-title">Planner <em>Gestação</em></div>
+          <div class="product-mock-price">R$ 47 <span>R$ 97</span></div>
+        </div>
+        <div class="product-overlay">
+          <a href="#comprar" class="overlay-btn">
+            <span class="overlay-btn-text">Quero o<br>planner</span>
+          </a>
+        </div>
+      </div>
+      <div class="product-meta">
+        <div class="product-category">Upsell</div>
+        <div class="product-title">Planner da Gestação<br>&amp; 1º Ano</div>
+        <div class="product-tags">
+          <span>Workbook</span>
+          <span>9 meses + 12 meses</span>
+          <span>R$ 47</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-item reveal reveal-delay-3">
+      <div class="product-image-wrap">
+        <div class="product-mock product-mock-2">
+          <div class="product-mock-tag">Downsell</div>
+          <div class="product-mock-title">Guia do <em>Papai</em></div>
+          <div class="product-mock-price">R$ 27 <span>R$ 67</span></div>
+        </div>
+        <div class="product-overlay">
+          <a href="#comprar" class="overlay-btn">
+            <span class="overlay-btn-text">Presente<br>para ele</span>
+          </a>
+        </div>
+      </div>
+      <div class="product-meta">
+        <div class="product-category">Downsell · Presente</div>
+        <div class="product-title">Guia do Papai<br>de Primeira Viagem</div>
+        <div class="product-tags">
+          <span>40 dicas</span>
+          <span>Nicho exclusivo</span>
+          <span>R$ 27</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="guarantee">
+  <div>
+    <div class="guarantee-label reveal">Sem risco para você</div>
+    <h2 class="guarantee-headline reveal reveal-delay-1">
+      Garantia
+      <em>incondicional.</em>
+    </h2>
+    <p class="guarantee-body reveal reveal-delay-2">
+      Se por qualquer motivo você não gostar do guia — ou de nenhum dos nossos produtos — basta enviar um e-mail em até 7 dias e devolvemos 100% do seu investimento. Sem perguntas. Sem burocracia.
+    </p>
+    <a href="#comprar" class="guarantee-cta reveal reveal-delay-3">Garantir sem risco</a>
+  </div>
+
+  <div class="reveal reveal-delay-2">
+    <div class="guarantee-box">
+      <span class="guarantee-icon">🔒</span>
+      <div class="guarantee-box-title">7 dias de garantia total</div>
+      <p class="guarantee-box-body">
+        Compra 100% segura via Kiwify.<br><br>
+        PIX, cartão de crédito ou boleto.<br><br>
+        Acesso imediato após a confirmação do pagamento.<br><br>
+        Em conformidade com o Art. 49 do Código de Defesa do Consumidor.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="comprar">
+  <div class="pricing-label reveal">Investimento</div>
+  <h2 class="pricing-headline reveal reveal-delay-1">
+    Comece
+    <em>agora.</em>
+  </h2>
+  <p class="pricing-sub reveal reveal-delay-2">Acesso imediato. Menos do que um jantar para dois. Mais do que qualquer aplicativo de maternidade.</p>
+
+  <div class="pricing-card reveal reveal-delay-2">
+    <div class="pricing-badge">✦ Oferta especial</div>
+    <div class="pricing-de">De R$ 97,00</div>
+    <div class="pricing-value"><sup>R$</sup>37</div>
+    <div class="pricing-installment">ou 3× de R$ 13,15 sem juros</div>
+
+    <div class="pricing-features">
+      <div class="pricing-feat"><div class="pricing-feat-dot"></div>Guia completo com 50 dicas práticas</div>
+      <div class="pricing-feat"><div class="pricing-feat-dot"></div>8 blocos temáticos organizados</div>
+      <div class="pricing-feat"><div class="pricing-feat-dot"></div>4 checklists bônus para imprimir</div>
+      <div class="pricing-feat"><div class="pricing-feat-dot"></div>17 citações bibliográficas (OMS, AAP, SBP)</div>
+      <div class="pricing-feat"><div class="pricing-feat-dot"></div>PDF — leia no celular, tablet ou PC</div>
+      <div class="pricing-feat"><div class="pricing-feat-dot"></div>Acesso imediato após o pagamento</div>
+      <div class="pricing-feat"><div class="pricing-feat-dot"></div>7 dias de garantia incondicional</div>
+    </div>
+
+    <a href="#checkout" class="pricing-btn">♡ Quero meu guia agora</a>
+    <div class="pricing-guarantee-note">🔒 Pagamento seguro · PIX, cartão ou boleto</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="faq-left">
+    <div class="faq-label reveal">Dúvidas</div>
+    <h2 class="faq-headline reveal reveal-delay-1">
+      Perguntas
+      <em>frequentes.</em>
+    </h2>
+    <p class="faq-body reveal reveal-delay-2">
+      Ainda tem dúvidas? Respondemos as mais comuns abaixo. Se a sua não estiver aqui, escreva para <strong>contato@primeiraviagemguia.com.br</strong>.
+    </p>
+  </div>
+
+  <div class="faq-right reveal reveal-delay-1">
+    <details open>
+      <summary>Como recebo o guia após a compra?</summary>
+      <div class="faq-answer">Imediatamente após a confirmação do pagamento você recebe um e-mail com o link para download do PDF. Se pagar no boleto, o prazo é de até 3 dias úteis.</div>
+    </details>
+    <details>
+      <summary>Em qual dispositivo posso ler?</summary>
+      <div class="faq-answer">O guia é um arquivo PDF que pode ser lido em qualquer dispositivo: celular, tablet, notebook ou computador. Você também pode imprimir os checklists bônus.</div>
+    </details>
+    <details>
+      <summary>As informações são baseadas em quê?</summary>
+      <div class="faq-answer">O guia é baseado nas recomendações da OMS, AAP (Academia Americana de Pediatria) e Sociedade Brasileira de Pediatria, com 17 referências bibliográficas citadas ao longo do texto.</div>
+    </details>
+    <details>
+      <summary>Serve para quem ainda está grávida?</summary>
+      <div class="faq-answer">Sim! Os primeiros dois blocos são voltados para o período da gestação. É altamente recomendado começar a ler antes de o bebê nascer.</div>
+    </details>
+    <details>
+      <summary>E se eu não gostar?</summary>
+      <div class="faq-answer">Garantia de 7 dias, sem perguntas. Basta enviar um e-mail informando que quer o reembolso e devolvemos 100% do valor pago.</div>
+    </details>
+    <details>
+      <summary>Tem versão física?</summary>
+      <div class="faq-answer">Por enquanto é apenas digital em PDF. Mas você pode imprimir em casa ou numa gráfica — o design foi feito para ficar bonito impresso.</div>
+    </details>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="final-cta-bg-text">♡</div>
+  <div class="final-cta-label reveal">Última chamada</div>
+  <h2 class="final-cta-headline reveal reveal-delay-1">
+    A maternidade
+    <em>mais leve</em>
+    começa aqui.
+  </h2>
+  <p class="final-cta-sub reveal reveal-delay-2">
+    Você não precisa descobrir tudo sozinha. Você não precisa errar em tudo antes de acertar. Esse guia foi feito para ser a mão que você segura nos momentos difíceis.
+  </p>
+  <a href="#checkout" class="final-cta-btn reveal reveal-delay-3">♡ Quero meu guia — R$37</a>
+  <div class="final-cta-note reveal reveal-delay-4">🔒 Compra segura · Acesso imediato · 7 dias de garantia</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">Primeira Viagem</div>
+      <p class="footer-mission">Informação de qualidade para mães e pais de primeira viagem. Baseado em evidências, escrito com humanidade.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <div class="footer-col-title">Produtos</div>
+        <ul class="footer-col-links">
+          <li><a href="#">Guia Principal</a></li>
+          <li><a href="#">Kit Checklists</a></li>
+          <li><a href="#">Planner</a></li>
+          <li><a href="#">Guia do Papai</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Legal</div>
+        <ul class="footer-col-links">
+          <li><a href="termos.html">Política de Privacidade</a></li>
+          <li><a href="termos.html">Termos de Uso</a></li>
+          <li><a href="#">Política de Reembolso</a></li>
+          <li><a href="#">Programa de Afiliados</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <ul class="footer-col-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">E-mail</a></li>
+          <li><a href="#">Suporte</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Primeira Viagem. Todos os direitos reservados.</div>
+    <div class="footer-legal">
+      <a href="termos.html">Privacidade</a>
+      <a href="#">Termos</a>
+      <a href="termos.html">Reembolso</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reveal animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Sticky bar
+  const stickyBar = document.getElementById('stickyBar');
+  window.addEventListener('scroll', () => {
+    stickyBar.classList.toggle('visible', window.scrollY > 600);
+  });
+</script>
+
+
+<div id="site-nav" style="
+  position:fixed;bottom:20px;right:20px;z-index:9999;
+  display:flex;flex-direction:column;gap:8px;
+  font-family:sans-serif;
+">
+  <a href="index.html" style="
+    background:rgba(45,27,53,0.85);color:#e4a4bd;
+    padding:6px 14px;border-radius:20px;font-size:11px;
+    font-weight:600;text-decoration:none;text-align:center;
+    border:1px solid rgba(228,164,189,0.3);
+    backdrop-filter:blur(8px);
+  ">🏠 Página de Vendas</a>
+  <a href="termos.html" style="
+    background:rgba(45,27,53,0.85);color:#e4a4bd;
+    padding:6px 14px;border-radius:20px;font-size:11px;
+    font-weight:600;text-decoration:none;text-align:center;
+    border:1px solid rgba(228,164,189,0.3);
+    backdrop-filter:blur(8px);
+  ">⚖️ Termos & Privacidade</a>
+</div>
+</body>
+</html>
